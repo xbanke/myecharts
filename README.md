@@ -12,7 +12,9 @@ This lib is built on pyehcarts which make the method 'add' can handle np.ndarray
 add(name, *iterables, **kwargs)
 
 add(pd.Series, **kwargs)
+
 add(name, dict, **kwargs)
+
 add(name, list_tuple, **kwargs)
 
 add_df(pd.DataFrame, **kwargs)
