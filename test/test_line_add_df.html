@@ -1,0 +1,668 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <script src="http://oog4yfyu0.bkt.clouddn.com/echarts.min.js"></script>
+    <script src="http://oog4yfyu0.bkt.clouddn.com/echarts-gl.js"></script>
+    <script type="text/javascript " src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+    <script type="text/javascript " src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/wordcloud.js"></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/anhui.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/aomen.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/beijing.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/chongqing.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/fujian.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/gansu.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/guangdong.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/guangxi.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/guizhou.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/hainan.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/hebei.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/heilongjiang.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/henan.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/hubei.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/hunan.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/jiangsu.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/jiangxi.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/jilin.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/liaoning.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/neimenggu.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/ningxia.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/qinghai.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/shangdong.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/shanghai.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/shanxi.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/sichuan.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/taiwan.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/tianjin.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/xianggang.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/xinjiang.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/xizang.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/yunnan.js "></script>
+    <script type="text/javascript " src="http://oog4yfyu0.bkt.clouddn.com/zhejiang.js "></script>
+</head>
+
+<body>
+    <div id="main" style="width:800px;height:400px;"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+        var option = {
+    "title": [
+        {
+            "text": "Test Line add_df",
+            "subtext": "",
+            "left": "auto",
+            "top": "auto",
+            "textStyle": {
+                "color": "#000",
+                "fontSize": 18
+            },
+            "subtextStyle": {
+                "color": "#aaa",
+                "fontSize": 12
+            }
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "vertical",
+        "left": "right",
+        "top": "center",
+        "feature": {
+            "saveAsImage": {
+                "show": true
+            }
+        }
+    },
+    "_index_flag": 1024938,
+    "tooltip": {},
+    "series": [
+        {
+            "type": "line",
+            "name": "A",
+            "symbol": "emptyCircle",
+            "smooth": false,
+            "step": false,
+            "stack": "",
+            "showSymbol": true,
+            "data": [
+                1.1298174343570062,
+                -0.7781735261404035,
+                0.043952829436869484,
+                -1.076626775748858,
+                1.9966467756680932,
+                0.3393725014289249,
+                -0.19474562155104205,
+                -0.514124811755928,
+                0.11347073870216948,
+                0.47529069090786874,
+                0.615790493775967,
+                -0.07066689365468015,
+                -0.3087990396555663,
+                -0.44559113167175424,
+                -0.5578384668396247,
+                -0.10273769704491527,
+                1.7914073660631993,
+                -0.05953086151513338,
+                -0.39519174309284744,
+                -0.36607224799246524,
+                0.14415100450235216,
+                0.22472819610388056,
+                -1.7629310030713925,
+                2.015685541972884,
+                0.84962627567397,
+                -1.0439598045759209,
+                -2.5111817895590467,
+                1.1097093993152265,
+                -0.6714462824170839,
+                2.0034045965891267,
+                -2.282396924454589,
+                -0.3573066979628069,
+                -0.28667602444782,
+                0.09798919341917878,
+                1.0758277877696654,
+                0.9631817104398178,
+                -1.317725380356089,
+                -1.9228090136275031,
+                -0.8747369416260972,
+                0.8742799675395833,
+                0.6722433839242303,
+                0.5635972687297823,
+                0.3728574351562894,
+                0.9388074852957552,
+                -1.0622594984172886,
+                0.600530523816476,
+                1.2773779542901238,
+                0.23774243284803795,
+                -1.9913922081683415,
+                0.9556666495545771
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "color": "#000",
+                        "fontSize": 12
+                    },
+                    "formatter": null
+                },
+                "emphasis": {
+                    "show": true
+                }
+            },
+            "lineStyle": {
+                "normal": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "areaStyle": {},
+            "markPoint": {
+                "data": []
+            },
+            "markLine": {
+                "data": []
+            },
+            "indexflag": 1024938
+        },
+        {
+            "type": "line",
+            "name": "B",
+            "symbol": "emptyCircle",
+            "smooth": false,
+            "step": false,
+            "stack": "",
+            "showSymbol": true,
+            "data": [
+                -0.1875389815155764,
+                0.9513594960474089,
+                -0.43711223391867476,
+                -0.7002073260375791,
+                -1.4155447395876093,
+                -0.8666605668831291,
+                1.1410447959678824,
+                -1.0401558566685432,
+                -0.05727670167003195,
+                0.3141930882418214,
+                -1.2194687787942644,
+                -1.2171191441679226,
+                0.957321636624447,
+                -0.5358445825212905,
+                0.6332060552946819,
+                1.5569762661437097,
+                -0.9612779202065342,
+                0.607975652421999,
+                0.543305204615727,
+                1.0093799577805629,
+                -0.052348014723307905,
+                0.7973560307212678,
+                -1.3426718579287742,
+                -0.24594404227982355,
+                0.8359239480138204,
+                0.5078422414076681,
+                -0.6989743764431313,
+                -0.013241203534820232,
+                0.38751983983868504,
+                0.4209965961565635,
+                -0.047256899294922425,
+                -0.43052140154516044,
+                1.648118434013774,
+                -0.8402701601753414,
+                -1.8314282296433761,
+                -0.1262177535124708,
+                -0.4659554430725891,
+                1.6187293717718885,
+                3.0427846271757875,
+                -0.4266990848777168,
+                -1.3332262860934132,
+                0.5380370375453735,
+                1.1978978784106067,
+                0.4603817353201897,
+                0.3701070125000929,
+                1.0150278936758637,
+                0.1107213395082916,
+                -1.6002610167896802,
+                0.24986460259096,
+                -1.204610862224516
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "color": "#000",
+                        "fontSize": 12
+                    },
+                    "formatter": null
+                },
+                "emphasis": {
+                    "show": true
+                }
+            },
+            "lineStyle": {
+                "normal": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "areaStyle": {},
+            "markPoint": {
+                "data": []
+            },
+            "markLine": {
+                "data": []
+            },
+            "indexflag": 1024938
+        },
+        {
+            "type": "line",
+            "name": "C",
+            "symbol": "emptyCircle",
+            "smooth": false,
+            "step": false,
+            "stack": "",
+            "showSymbol": true,
+            "data": [
+                -0.022807269607528068,
+                -0.9938636175439727,
+                -1.4632511170734521,
+                -1.0905566278116432,
+                -0.4808519590308122,
+                -0.051155440766201425,
+                -0.5143334933563116,
+                0.6233225071473567,
+                -0.7586672882845558,
+                1.128553497764838,
+                0.35167847746640496,
+                0.17412670224034327,
+                2.0101530886592016,
+                0.2387075444619906,
+                -0.830939863465967,
+                0.24296725117067827,
+                0.23549868089585313,
+                -0.3906640816588548,
+                -1.8468848882905204,
+                0.018707765065753033,
+                -0.730016048154909,
+                0.8161514096465379,
+                -0.8130598710842818,
+                -0.25619491823016877,
+                -0.9260124109602089,
+                1.031538261419955,
+                -0.33472888385231997,
+                0.3105846138757925,
+                0.9222468367772056,
+                0.6130280442737945,
+                -0.0022108217172264024,
+                -0.809603177004562,
+                0.4526998625031853,
+                0.04967099575247365,
+                -0.4847225436625575,
+                1.2040238358916755,
+                0.16158252018141575,
+                -1.5461103209018365,
+                -0.3690638151656639,
+                -1.3959861354235612,
+                0.40244449306992225,
+                0.2761902041959527,
+                -0.8321112607254009,
+                -0.5688148417032208,
+                0.6542164044934129,
+                -0.35389372113875023,
+                0.45150613133803563,
+                -0.22356915922661438,
+                1.3563105121670915,
+                0.39713553811150154
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "color": "#000",
+                        "fontSize": 12
+                    },
+                    "formatter": null
+                },
+                "emphasis": {
+                    "show": true
+                }
+            },
+            "lineStyle": {
+                "normal": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "areaStyle": {},
+            "markPoint": {
+                "data": []
+            },
+            "markLine": {
+                "data": []
+            },
+            "indexflag": 1024938
+        },
+        {
+            "type": "line",
+            "name": "D",
+            "symbol": "emptyCircle",
+            "smooth": false,
+            "step": false,
+            "stack": "",
+            "showSymbol": true,
+            "data": [
+                0.888896528606751,
+                0.8204425478974632,
+                0.17234653870882216,
+                -0.044237324858749275,
+                -0.36588537126603277,
+                -2.4080388193474502,
+                -1.5832790685674134,
+                0.22526236994252966,
+                -0.40790769510670877,
+                1.5103012733824372,
+                1.0467396025764177,
+                -0.6424097213084716,
+                1.7302311584443828,
+                -0.5402476881631563,
+                1.551778139895987,
+                0.19813956586793635,
+                0.4682604027968077,
+                -0.9053000911395377,
+                0.407007400651058,
+                -0.7103064415809738,
+                -0.49349628230194775,
+                0.40014834014642936,
+                0.2782255882321233,
+                -0.3958931606919306,
+                0.09106561965669113,
+                0.4018874145314498,
+                -0.2575271325738969,
+                0.9582114772434269,
+                1.5506606064598722,
+                1.6868300164718966,
+                -0.4536575042603209,
+                0.6993301638641989,
+                -0.48690674934893513,
+                -0.8327350319623226,
+                0.6601443731817075,
+                -0.46383655307352406,
+                0.6085416306379455,
+                0.5363992979715497,
+                -0.1419006759896809,
+                -0.5625839046404841,
+                -0.6329399462531539,
+                -0.6156806105734174,
+                0.2368426091998439,
+                1.9089888298907423,
+                0.7964364109118753,
+                0.1527594575663833,
+                -0.9481878665532008,
+                -0.6222899070584471,
+                -0.3371207747129409,
+                -0.49195857520920977
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "color": "#000",
+                        "fontSize": 12
+                    },
+                    "formatter": null
+                },
+                "emphasis": {
+                    "show": true
+                }
+            },
+            "lineStyle": {
+                "normal": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "areaStyle": {},
+            "markPoint": {
+                "data": []
+            },
+            "markLine": {
+                "data": []
+            },
+            "indexflag": 1024938
+        },
+        {
+            "type": "line",
+            "name": "E",
+            "symbol": "emptyCircle",
+            "smooth": false,
+            "step": false,
+            "stack": "",
+            "showSymbol": true,
+            "data": [
+                0.634200109614787,
+                1.9308907944521778,
+                0.227818593738844,
+                -0.07609935170756035,
+                -0.35116571349657044,
+                0.35043316357987847,
+                -0.6453430716010062,
+                1.4684556432052727,
+                -1.080706782754662,
+                1.4708760319368381,
+                -2.680684986520146,
+                0.7211805585975009,
+                -0.15870592200146544,
+                0.48037371256086697,
+                1.2311640612011785,
+                -0.9449748382185902,
+                -1.084411336923668,
+                -0.15042002831900447,
+                -0.580528664515405,
+                -0.6216715425891792,
+                -0.7501852589665581,
+                -0.6956173819112261,
+                1.6041746964325625,
+                -2.076212568892946,
+                -0.46829594499814675,
+                -0.06260016719100564,
+                -1.435265169306595,
+                1.4013785537412817,
+                -0.22874274830604754,
+                0.5373635116243259,
+                -2.604234311200393,
+                -2.017380110501762,
+                1.282489150599793,
+                -0.027003631789315478,
+                -0.5344722982067506,
+                0.8868405750400343,
+                0.03132814092099438,
+                0.04892736150572014,
+                0.72521831812252,
+                0.13736439002303666,
+                0.31235245575855464,
+                1.0416261985664848,
+                -1.1864259637553771,
+                -0.4737860946458176,
+                -0.3377919653011371,
+                -0.002307555980292176,
+                1.237359997990724,
+                -0.7818647014231219,
+                0.49212778119818196,
+                -2.3162239982175516
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "color": "#000",
+                        "fontSize": 12
+                    },
+                    "formatter": null
+                },
+                "emphasis": {
+                    "show": true
+                }
+            },
+            "lineStyle": {
+                "normal": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "areaStyle": {},
+            "markPoint": {
+                "data": []
+            },
+            "markLine": {
+                "data": []
+            },
+            "indexflag": 1024938
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+            ],
+            "selectedMode": true,
+            "show": true,
+            "left": "center",
+            "top": "top",
+            "orient": "horizontal"
+        }
+    ],
+    "backgroundColor": "#fff",
+    "xAxis": [
+        {
+            "name": "",
+            "nameLocation": "middle",
+            "nameGap": 25,
+            "nameTextStyle": {
+                "fontSize": 14
+            },
+            "axisLabel": {
+                "interval": "auto"
+            },
+            "data": [
+                "2015-01-01",
+                "2015-01-02",
+                "2015-01-03",
+                "2015-01-04",
+                "2015-01-05",
+                "2015-01-06",
+                "2015-01-07",
+                "2015-01-08",
+                "2015-01-09",
+                "2015-01-10",
+                "2015-01-11",
+                "2015-01-12",
+                "2015-01-13",
+                "2015-01-14",
+                "2015-01-15",
+                "2015-01-16",
+                "2015-01-17",
+                "2015-01-18",
+                "2015-01-19",
+                "2015-01-20",
+                "2015-01-21",
+                "2015-01-22",
+                "2015-01-23",
+                "2015-01-24",
+                "2015-01-25",
+                "2015-01-26",
+                "2015-01-27",
+                "2015-01-28",
+                "2015-01-29",
+                "2015-01-30",
+                "2015-01-31",
+                "2015-02-01",
+                "2015-02-02",
+                "2015-02-03",
+                "2015-02-04",
+                "2015-02-05",
+                "2015-02-06",
+                "2015-02-07",
+                "2015-02-08",
+                "2015-02-09",
+                "2015-02-10",
+                "2015-02-11",
+                "2015-02-12",
+                "2015-02-13",
+                "2015-02-14",
+                "2015-02-15",
+                "2015-02-16",
+                "2015-02-17",
+                "2015-02-18",
+                "2015-02-19"
+            ],
+            "type": "category"
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "",
+            "nameLocation": "middle",
+            "nameGap": 25,
+            "nameTextStyle": {
+                "fontSize": 14
+            },
+            "axisLabel": {
+                "formatter": "{value} "
+            },
+            "type": "value"
+        }
+    ],
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597",
+        "#f6f5ec"
+    ]
+};
+        myChart.setOption(option);
+    </script>
+</body>
+
+</html>
